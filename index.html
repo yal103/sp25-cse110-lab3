@@ -4,7 +4,7 @@
     <title>Database Scheme Brainstorm</title>
     <meta charset="UTF-8">
     <meta name="description" content="Meeting minutes for database schema planning session.">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="assets/favicon.ico">
   </head>
   <body>
     <header>
@@ -30,16 +30,19 @@
 
     <main>
         <section id="attendance">
-            <h2>Attendance</h2>
-            <ul>
-                <li>Yangyang Liu</li>
-                <li>Alan Turing</li>
-                <li>Thomas Powell</li>
-                <li>Ada Lovelace</li>
-            </ul>
+            <div>
+                <h2>Attendance</h2>
+                <ul>
+                    <li>Yangyang Liu</li>
+                    <li>Alan Turing</li>
+                    <li>Thomas Powell</li>
+                    <li>Ada Lovelace</li>
+                </ul>
+            </div>
         </section>
         <hr>
         <section id="agenda">
+            <div>
             <h2>Agenda</h2>
             <ol>
                 <li>Review use cases for MongoDB in our project</li>
@@ -49,10 +52,113 @@
                 <li>Establish schema validation rules</li>
             </ol>
         </section>
+        <hr>
+        <section id="unfinished">
+            <h2>Unfinished Business</h2>
+            <p>Still need to agree on how to organize the database.</p>
+        </section>
+        <hr>
+        <section id="new">
+            <h2>New Business</h2>
+            <div>
+                <p><strong>Tables Proposed:</strong></p>
+                <ul>
+                    <li><b>Users:</b> user id, name, email, password</li>
+                    <li><b>Tasks:</b> task id, title, description, due date, user id</li>
+                    <li><b>Projects:</b> project id, title, start date, end date</li>
+                </ul>
+
+                <p><em>Key Discussion:</em> Should we track task status in a separate table or inside <code>Tasks</code>?</p>
+
+                <details>
+                    <summary>Decision</summary>
+                    <p>Agreed to store task status within the <code>Tasks</code> table for simplicity.</p>
+                </details>
+            </div>
+        </section>
+        <hr>
+        <section id="miscellaneous">
+            <h2>Miscellaneous</h2>
+            <p><i>Note:</i> MongoDB has a 16MB document size limit, so keep embedded arrays short.</p>
+            <p><b>Reminder:</b> Each team member should suggest at least <i>one</i> improvement to the current schema draft.</p>
+        </section>
+        <hr>
+        <section id="media">
+            <h2>Media</h2>
+            <b>Schema Draft</b>
+            <br>
+            <img src="assets/database-schema.png" alt="Initial sketch of database schema" width="400"> 
+            <!-- https://www.astera.com/type/blog/database-schema/ -->
+            <br>
+            <b>Meeting Audio</b>
+            <br>
+            <audio controls>
+                <source src="assets/talking-people-6368.mp3">
+                Audio not supported.
+            </audio>
+            <br>
+            <!-- https://pixabay.com/sound-effects/search/talking/ -->
+             <b>Meeting Video</b>
+             <br>
+             <video width="320" controls>
+                <source src="assets/AdobeStock_194985027_Video_HD_Preview.mov">
+                Video not supported
+             </video>
+             <!-- https://stock.adobe.com/ -->
+        </section>
+        <hr>
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Database Meeting Feedback</legend>
+                    <label >Name:</label>
+                    <input type="text"><br>
+
+                    <label>Meeting Date:</label>
+                    <input type="date"><br>
+
+                    <p>Was this schema discussion helpful/useful?</p>
+                    <input type="radio">
+                    <label>Yes</label><br>
+                    <input type="radio">
+                    <label>No</label><br>
+
+                    <label>Any suggestions or improvements?</label><br>
+                    <textarea></textarea><br>
+
+                    <label>Favorite proposed table:</label><br>
+                    <input list="tables">
+                    <datalist id="tables">
+                        <option value="Users"/>
+                        <option value="Tasks"/>
+                        <option value="Projects"/>
+                    </datalist>
+                    <br>
+
+                    <label>
+                        <input type="checkbox">
+                        I'd like to join the next schema discussion
+                    </label>
+                    <br>
+
+                    <label for="role">Role</label><br>
+                    <select name="role" id="role">
+                        <option value="">Select</option>
+                        <option value="designer">Designer</option>
+                        <option value="developer">Developer</option>
+                        <option value="analyst">Data Analyst</option>
+                    </select>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
-
+    <hr>
     <footer>
-
+        <span>Yangyang Liu - CSE 101 SP24</span>
     </footer>
   </body>
 </html>
