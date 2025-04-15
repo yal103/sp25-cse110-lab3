@@ -62,7 +62,7 @@ Each attendee should answer the following questions:
 - Action Item 1:
   - Responsible: Attendee 1
   - Due Date: YYYY-MM-DD
-- Action Item 2
+- Action Item 2:
   - Responsible: Attendee 2
   - Due Date: YYYY-MM-DD
 
