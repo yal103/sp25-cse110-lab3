@@ -1,0 +1,39 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* color variables */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1a1a1a;
+    --text-color: #e0e0e0;
+    --muted-text: #a0a0a0;
+    --accent-color: #64ffda;
+    --border-color: #333;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --border-radius: 4px;
+    --header-color: var(--accent-color, #64ffda);
+}
+
+/* universal styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+body {
+    font-family: 'Markazi Text', serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.5em;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
