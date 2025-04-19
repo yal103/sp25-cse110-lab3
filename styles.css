@@ -57,3 +57,23 @@ h2 {
 h3 {
     font-size: 1.8rem;
 }
+
+/* Descendant Combinator */
+header h1 {
+    margin-bottom: 10px;
+}
+  
+/* Child Combinator */
+header > h2 {
+    color: var(--muted-text);
+}
+  
+/* Adjacent Sibling Combinator */
+h2 + p {
+    margin-top: 0.5em;
+}
+  
+/* General Sibling Combinator */
+h2 ~ p {
+    margin-bottom: 1em;
+}
