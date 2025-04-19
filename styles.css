@@ -5,16 +5,16 @@
 :root {
     --bg-color: #121212;
     --card-bg: #1a1a1a;
-    --text-color: #e0e0e0;
+    --text-color: #dddddd;
     --muted-text: #a0a0a0;
-    --accent-color: #64ffda;
+    --accent-color: #8a62db;
     --border-color: #333;
     --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
+    --spacing-sm: 1.5rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
-    --border-radius: 4px;
-    --header-color: var(--accent-color, #64ffda);
+    --border-radius: 20px;
+    --header-color: var(--accent-color, #8a62db);
 }
 
 /* universal styles */
@@ -22,6 +22,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0 0 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +47,7 @@ h1, h2, h3 {
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.1em;
+    color: var(--header-color);
 }
 
 h1 {
@@ -76,4 +81,48 @@ h2 + p {
 /* General Sibling Combinator */
 h2 ~ p {
     margin-bottom: 1em;
+}
+
+/* contents/nav */
+nav {
+    background-color: var(--card-bg);
+    padding-bottom: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav li {
+    background-color: #222;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--border-color);
+}
+
+nav li:hover {
+    background-color: var(--accent-color);
+    transition: background-color 0.2s ease-out;
+}
+
+nav li:active {
+    background-color: #8a62db8a;
+    transition: background-color 0.2s ease-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
