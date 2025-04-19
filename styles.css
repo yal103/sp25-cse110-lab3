@@ -14,7 +14,7 @@
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --border-radius: 20px;
-    --header-color: var(--accent-color, #7958ba);
+    --header-color: var(--accent-color, #8a62db);
 }
 
 /* universal styles */
@@ -22,6 +22,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0 0 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,8 +108,21 @@ nav li {
     border-color: var(--border-color);
 }
 
+nav li:hover {
+    background-color: var(--accent-color);
+    transition: background-color 0.2s ease-out;
+}
+
+nav li:active {
+    background-color: #8a62db8a;
+    transition: background-color 0.2s ease-out;
+}
+
 nav a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
