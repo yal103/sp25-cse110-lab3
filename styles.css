@@ -3,8 +3,8 @@
 
 /* color variables */
 :root {
-    --bg-color: #121212;
-    --card-bg: #1a1a1a;
+    --bg-color: rgb(18, 18, 18);
+    --card-bg: hsl(0, 0%, 10%);
     --text-color: #dddddd;
     --accent-color: #8a62db;
     --border-color: #333;
@@ -99,7 +99,7 @@ h2 ~ p {
 
 /* contents/nav */
 nav {
-    background-color: var(--card-bg);
+    background-color: color(display-p3 0.1 0.1 0.1);
     padding-bottom: var(--spacing-sm);
     border-radius: var(--border-radius);
     margin: 20px 0;
@@ -174,4 +174,42 @@ nav a {
     flex-direction: column;
 }
 
+/* unfinished business */
+#unfinished {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    justify-items: center;
+}
+
+section.important {
+    border: 3px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+.important-note {
+    background-color: rgba(189, 99, 209, 0.084);
+    border-left: 2px solid var(--accent-color);
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+details {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+summary::marker {
+    color: var(--accent-color);
+}
+
+details p {
+    padding-left: 25px;
+}
 
