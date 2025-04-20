@@ -6,6 +6,17 @@
     <meta name="description" content="Meeting minutes for database schema planning session.">
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for code elements */
+        code {
+            font-family: 'Fira Code', monospace;
+            background-color: #222;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.7em;
+            color: var(--accent-color);
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -60,17 +71,19 @@
             <p>Still need to agree on how to organize the database.</p>
         </section>
         <hr>
-        <section id="new">
+        <section id="new" class="important">
             <h2>- New Business -</h2>
             <div>
-                <p><strong>Tables Proposed:</strong></p>
-                <ul>
-                    <li><b>Users:</b> user id, name, email, password</li>
-                    <li><b>Tasks:</b> task id, title, description, due date, user id</li>
-                    <li><b>Projects:</b> project id, title, start date, end date</li>
-                </ul>
+                <div style="justify-items: center; display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;">
+                    <p style="font-size: 1.2em; letter-spacing: 0.6px;"><strong>Tables Proposed:</strong></p>
+                    <ul>
+                        <li><code>Users</code>: user id, name, email, password</li>
+                        <li><code>Tasks</code>: task id, title, description, due date, user id</li>
+                        <li><code>Projects</code>: project id, title, start date, end date</li>
+                    </ul>
+                </div>
 
-                <p><em>Key Discussion:</em> Should we track task status in a separate table or inside <code>Tasks</code>?</p>
+                <p class="important-note"><em>Key Discussion:</em> Should we track task status in a separate table or inside <code>Tasks</code>?</p>
 
                 <details>
                     <summary>Decision</summary>
