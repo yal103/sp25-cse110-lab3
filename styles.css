@@ -99,7 +99,7 @@ h2 ~ p {
 
 /* contents/nav */
 nav {
-    background-color: color(display-p3 0.1 0.1 0.1);
+    background-color: var(--card-bg);
     padding-bottom: var(--spacing-sm);
     border-radius: var(--border-radius);
     margin: 20px 0;
@@ -218,6 +218,7 @@ details p {
 #miscellaneous {
     justify-items: center;
     position: relative;
+    background-color: color(display-p3 0.1 0.1 0.15);;
 }
 
 #miscellaneous i, #miscellaneous b {
