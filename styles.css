@@ -53,7 +53,7 @@ section {
     border-radius: var(--border-radius);
     border-style: solid;
     border-width: 0.5px;
-    border-color: var(--border-color);
+    border: 2px solid var(--accent-color);
 }
 
 /* header styles */
