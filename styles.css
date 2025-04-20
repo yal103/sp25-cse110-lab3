@@ -351,3 +351,22 @@ li:has(> b) {
     padding: 5px;
     border-radius: var(--border-radius);
 }
+
+.form-group {
+    margin-bottom: 15px;
+    
+    & label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted-text);
+    }
+    
+    & input, & select, & textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      background-color: #222;
+      color: var(--text-color);
+    }
+}
