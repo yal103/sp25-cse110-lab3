@@ -148,9 +148,18 @@ nav a {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
-#attendance div, #agenda div {
+#agenda div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -232,7 +241,6 @@ details p {
 
 #media {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, auto));
     grid-gap: 0px;
     grid-auto-rows: minmax(auto, auto);
     justify-items: center;
@@ -351,25 +359,6 @@ li:has(> b) {
     background-color: rgba(100, 255, 218, 0.05);
     padding: 5px;
     border-radius: var(--border-radius);
-}
-
-.form-group {
-    margin-bottom: 15px;
-    
-    & label {
-      display: block;
-      margin-bottom: 5px;
-      color: var(--muted-text);
-    }
-    
-    & input, & select, & textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid var(--border-color);
-      border-radius: var(--border-radius);
-      background-color: #222;
-      color: var(--text-color);
-    }
 }
 
 /* footer */
