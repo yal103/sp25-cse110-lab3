@@ -251,3 +251,96 @@ img, video {
 #none {
     display: none;
 }
+
+/* feedback form */
+#feedback {
+    background-color: color-mix(in srgb, var(--accent-color) 10%, var(--card-bg));
+}
+
+#feedback form {
+    /* background-color: #1a1a1a; */
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: var(--border-radius);
+}
+
+#feedback fieldset {
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 10px 30px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 15px;
+  }
+  
+[type="submit"]:hover {
+    background-color: #8a62db69;
+}
+
+input[type="text"], textarea {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="date"] {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 15px;
+    max-width: 50%;
+}
+
+input[type="radio"] {
+    margin-left: 20px;
+    color: var(--text-color);
+}
+
+textarea {
+    resize: both; /* Allow resizing both horizontally and vertically */
+    overflow: auto; /* Ensure scrollbars appear if content overflows */
+    min-height: 100px; /* Set a minimum height */
+    min-width: 200px; /* Set a minimum width */
+}
+
+input[list] {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    max-width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+select {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    padding: 10px;;
+    max-width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
