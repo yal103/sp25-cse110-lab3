@@ -183,6 +183,7 @@ nav a {
     justify-items: center;
 }
 
+/* new business */
 section.important {
     border: 3px solid var(--accent-color);
     padding-left: 15px;
@@ -215,6 +216,7 @@ details p {
     margin: auto;
 }
 
+/* miscellaneous */
 #miscellaneous {
     justify-items: center;
     position: relative;
@@ -225,3 +227,27 @@ details p {
     color: var(--accent-color);
 }
 
+/* media */
+
+#media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+    grid-gap: 0px;
+    grid-auto-rows: minmax(auto, auto);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img, video {
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin-top: -20px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-color);
+}
+
+#none {
+    display: none;
+}
