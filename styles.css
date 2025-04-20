@@ -217,6 +217,7 @@ details p {
 
 #miscellaneous {
     justify-items: center;
+    position: relative;
 }
 
 #miscellaneous i, #miscellaneous b {
