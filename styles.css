@@ -27,6 +27,12 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
 body {
     font-family: 'Markazi Text', serif;
     line-height: 1.6;
@@ -39,6 +45,15 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--border-color);
 }
 
 /* header styles */
@@ -103,7 +118,7 @@ nav li {
     padding: 5px 10px;
     border-radius: var(--border-radius);
     border-style: solid;
-    border-width: 0.5px;
+    border-width: 0.1pt;
     border-color: var(--border-color);
 }
 
@@ -125,3 +140,38 @@ nav a {
     width: 100%;
     height: 100%;
 }
+
+/* attendance */
+
+#attendance {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#attendance div, #agenda div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#attendance ul, #agenda ol {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+#attendance ul {
+    flex-direction: row;
+}
+
+#agenda ol {
+    flex-direction: column;
+}
+
+
