@@ -199,6 +199,7 @@ section.important {
 details {
     margin: 15px 0;
     padding-left: 25px;
+    min-width: 100%;
 }
 
 summary:hover {
@@ -211,5 +212,14 @@ summary::marker {
 
 details p {
     padding-left: 25px;
+    margin: auto;
+}
+
+#miscellaneous {
+    justify-items: center;
+}
+
+#miscellaneous i, #miscellaneous b {
+    color: var(--accent-color);
 }
 
