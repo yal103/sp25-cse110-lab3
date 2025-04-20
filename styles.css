@@ -370,3 +370,13 @@ li:has(> b) {
       color: var(--text-color);
     }
 }
+
+/* footer */
+footer {
+    position: sticky;
+    justify-self: right;
+    bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
